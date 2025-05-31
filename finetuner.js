@@ -1,10 +1,7 @@
 const fs = require('fs');
 const OpenAI = require('openai');
 
-async function generateAudio() {
-  const openai = new OpenAI({
-    apiKey: 'AIzaSyBLQYevnF0IGkhFD_qOxpyTdfc8eVnmHjs', // Replace with your actual API key
-  });
+
 
   try {
     const response = await openai.chat.completions.create({
